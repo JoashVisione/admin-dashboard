@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard clone</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside>
+        <div class="top">
+          <img src="./images/logo.png" alt="" />
+          <h2>JO<span class="primary">ASH</span></h2>
+          <div class="close-btn">
+            <span class="material-symbols-rounded">close</span>
+          </div>
+        </div>
+        <div class="sidebar">
+          <a href="#" class="active">
+            <span class="material-symbols-rounded">grid_view</span>
+            <h3>Dashboard</h3>
+          </a>
+          <a href="#">
+            <span class="material-symbols-rounded">person</span>
+            <h3>Customers</h3>
+          </a>
+          <a href="#">
+            <span class="material-symbols-rounded">receipt_long</span>
+            <h3>Orders</h3>
+          </a>
+          <a href="#">
+            <span class="material-symbols-rounded">monitoring</span>
+            <h3>Analytics</h3>
+          </a>
+          <a href="#" class="message">
+            <span class="material-symbols-rounded">chat</span>
+            <h3>Messages</h3>
+            <small class="message-count">34</small>
+          </a>
+          <a href="#">
+            <span class="material-symbols-rounded">inventory</span>
+            <h3>Products</h3>
+          </a>
+          <a href="#">
+            <span class="material-symbols-rounded">report</span>
+            <h3>Reports</h3>
+          </a>
+          <a href="#">
+            <span class="material-symbols-rounded">settings</span>
+            <h3>Settings</h3>
+          </a>
+          <a href="#">
+            <span class="material-symbols-rounded">add</span>
+            <h3>Add Product</h3>
+          </a>
+          <a href="#">
+            <span class="material-symbols-rounded">logout</span>
+            <h3>Logout</h3>
+          </a>
+        </div>
+      </aside>
+      <main>
+        <h2>Dashboard</h2>
+        <input type="date" id="date" />
+        <div class="insights">
+          <div class="sales">
+            <span class="material-symbols-rounded">analytics</span>
+            <div class="middle">
+              <div class="left">
+                <h4>Total Sales</h4>
+                <h1>$99094</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cy="36" cx="36" r="34"></circle>
+                </svg>
+                <div class="number">
+                  <p>85%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted">Last 24 hours</small>
+          </div>
+          <div class="expenses">
+            <span class="material-symbols-rounded">bar_chart</span>
+            <div class="middle">
+              <div class="left">
+                <h4>Total Expenses</h4>
+                <h1>$9094</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cy="36" cx="36" r="34"></circle>
+                </svg>
+                <div class="number">
+                  <p>60%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted">Last 24 hours</small>
+          </div>
+          <div class="income">
+            <span class="material-symbols-rounded">stacked_line_chart</span>
+            <div class="middle">
+              <div class="left">
+                <h4>Total Income</h4>
+                <h1>$9994</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cy="36" cx="36" r="34"></circle>
+                </svg>
+                <div class="number">
+                  <p>40%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted">Last 24 hours</small>
+          </div>
+        </div>
+        <div class="recent-order">
+          <h2>Recent orders</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Product Name</th>
+                <th>Product Number</th>
+                <th>Payment</th>
+                <th>Status</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <a href="#">Show All</a>
+        </div>
+      </main>
+
+      <section class="right">
+        <div class="top">
+          <button id="menu-btn">
+            <span class="material-symbols-rounded">menu</span>
+          </button>
+          <div class="theme-toggler">
+            <span class="material-symbols-rounded active">light_mode</span>
+            <span class="material-symbols-rounded">dark_mode</span>
+          </div>
+          <div class="profile">
+            <div class="info">
+              <h5>Hey, <span>Joash</span> </h5>
+              <small class="text-muted">Admin</small>
+            </div>
+            <img src="./images/joash.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="recent-updates">
+          <h3>Recent Updates</h3>
+          <div class="update">
+            <img src="./images/profile-2.jpg" alt="" />
+            <div class="message">
+              <p><span>Mike Tyson</span> received his order of Mightly GPS drone</p>
+              <small class="text-muted">3 minutes ago</small>
+            </div>
+          </div>
+          <div class="update">
+            <img src="./images/profile-3.jpg" alt="" />
+            <div class="message">
+              <p><span>May Blad</span> received his order of Mightly GPS drone</p>
+              <small class="text-muted">3 minutes ago</small>
+            </div>
+          </div>
+          <div class="update">
+            <img src="./images/profile-4.jpg" alt="" />
+            <div class="message">
+              <p><span>Jane Miyi</span> received his order of Mightly GPS drone</p>
+              <small class="text-muted">3 minutes ago</small>
+            </div>
+          </div>
+        </div>
+        <!-- Analytics -->
+        <div class="analytics">
+          <h3>Sales Analytics</h3>
+          <div class="item online">
+            <span class="material-symbols-rounded active">shopping_cart</span>
+            <div class="content">
+              <div class="description">
+                <h4>Online Orders</h4>
+                <small class="text-muted">Last 24 hours</small>
+              </div>
+              <p class="success">+38%</p>
+              <h4>393</h4>
+            </div>
+          </div>
+          <div class="item offline">
+            <span class="material-symbols-rounded active">local_mall</span>
+            <div class="content">
+              <div class="description">
+                <h4>Offline Orders</h4>
+                <small class="text-muted">Last 24 hours</small>
+              </div>
+              <p class="success">+38%</p>
+              <h4>393</h4>
+            </div>
+          </div>
+          <div class="item customers">
+            <span class="material-symbols-rounded active">person</span>
+            <div class="content">
+              <div class="description">
+                <h4>New Customers</h4>
+                <small class="text-muted">Last 24 hours</small>
+              </div>
+              <p class="success">+38%</p>
+              <h4>393</h4>
+            </div>
+          </div>
+        </div>
+        <div class="add-product">
+          <span class="material-symbols-rounded active">add</span>
+          <p>Add Product</p>
+        </div>
+      </section>
+    </div>
+    <script src="orders.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
